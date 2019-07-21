@@ -1,0 +1,105 @@
+// variable
+// colors
+$base-font-color: rgb(101, 119, 134)
+$strong-font-color: black
+$custom-color: #4ab3f4
+// $custom-font-color:
+// size
+$navigation-height: 46px
+// global class
+.container
+  width: 1180px
+  margin: 0 auto
+// main
+header
+  $border-bottom-height: 3px
+  height: $navigation-height
+  box-sizing: border-box
+  border-bottom: 1px solid $base-font-color
+  &:after
+    content: ''
+  .container
+    display: flex
+    justify-content: space-between
+    position: relative
+    .category
+      display: flex
+      box-sizing: border-box
+      align-items: center
+      li
+        box-sizing: border-box
+        font-size: 1.3rem
+        border-bottom: solid $border-bottom-height transparent
+        box-sizing: border-box
+        padding: 0 15px
+        line-height: calc(#{$navigation-height} - 1px - #{$border-bottom-height})
+        transition: .2s
+        .icon
+          margin-right: 0.5rem
+          font-size: 1.6rem
+        &:hover, &.acitve
+          border-color: $custom-color
+          color: $custom-color
+          transition: .2s
+          // color: $custom-font-color
+    .center-group
+      display: flex
+      align-items: center
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      img
+        height: 25px
+        width: 25px
+    .right_group
+      display: flex
+      align-items: center
+      .form
+        height: 32px
+        position: relative
+        display: flex
+        border: 1px solid #e6ecf0
+        background-color: black
+        background-color: #f5f8fa
+        width: 200px
+        border-radius: 16px
+        box-sizing: border-box
+        // width: 100px
+        input
+          height: 100%
+          width: 100%
+          border: 0
+          outline: none
+          background-color: transparent
+          box-sizing: border-box
+          &:focus
+            box-sizing: border-box
+            border-radius: 16px
+            padding: 0 15px
+            border: solid 2px $custom-color
+          &:not(:focus)
+            border: solid 2px transparent
+            box-sizing: border-box
+            padding: 0 15px
+        .button
+          position: absolute
+          top: 50%
+          right: 10px
+          font-size: 18px
+          transform: translateY(-50%)
+          cursor: pointer
+      .icon
+        height: 30px
+        width: 30px
+        border-radius: 50px
+        margin: 0 15px
+      .tweet_button
+        background-color: $custom-color
+        color: white
+        line-height: 32px
+        padding: 0 16px
+        font-size: 14px
+        border-radius: 16px
+.hogehogeee
+  height: 1000px
